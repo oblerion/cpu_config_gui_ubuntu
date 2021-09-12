@@ -42,7 +42,7 @@ void set_setting(struct setting set)
 }
 void print_setting(struct setting set)
 {
-	printf("name [%s] gouv [%s] freq [%1.1f] Ghz\n",set.name,set.gouv,set.freq);
+	printf("name [%9s] gouv [%11s] freq [%1.1f] Ghz\n",set.name,set.gouv,set.freq);
 }
 
 int main(int narg,char** carg)
