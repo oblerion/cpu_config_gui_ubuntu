@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+// for edit go in main()
 int strcomp(char* c1,const char* c2)
 {
 	int i;
@@ -48,6 +48,10 @@ void print_setting(struct setting set)
 int main(int narg,char** carg)
 {
 	struct setting list_setting[4];
+	//                new_setting(name,frequency,gouvernor)
+	//                                 name use for load setting
+	//                                 frequency is float in Ghz
+	//                                 gouvernor is char 's' for savepower, 'p' for performance 
 	list_setting[0] = new_setting("mini",0.5,'s');
 	list_setting[1] = new_setting("mini+",1.0,'p');
 	list_setting[2] = new_setting("med",1.5,'p');
