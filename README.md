@@ -12,3 +12,4 @@ packet [cpufrequtils](https://doc.ubuntu-fr.org/cpu-frequtils)
 ``` 
 ./cpucfg help 
 ```
+print all config with name frequency gouvernor
