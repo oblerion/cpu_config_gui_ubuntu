@@ -1,15 +1,10 @@
 # cpu_config_gui_ubuntu
 gui for create / load cpu's profil 
-- change main.c for edit profil
 
 # dependences
 packet [cpufrequtils](https://doc.ubuntu-fr.org/cpu-frequtils)
 # how use it
+edit main.cpp to add config
 ```
-./cpucfg config_name
+sudo ./cpucfg
 ```
-# get help
-``` 
-./cpucfg help 
-```
-print all config with name frequency gouvernor
