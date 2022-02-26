@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <string>
 #include <vector>
+#include <string.h>
 struct setting
 {
 	std::string name="";
@@ -18,12 +19,12 @@ struct setting
 	}
 	void set()
 	{
-		std::string str;
+		char str[100];
 		int i;
 		for(i=0;i<8;i++)
 		{
-			str = "sudo cpufreq-set -c "+std::to_string(i)+" -g "+this->gouv+" -u "+std::to_string((float)this->freq/1000)+" -r";
-			system(str.c_str());
+			sprintf(str, "sudo cpufreq-set -c %d -g %s -u %1.1fGhz -r",i,this->gouv.c_str(),(float)this->freq/1000);
+			system(str);
 		}
 
 	}
