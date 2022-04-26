@@ -1,6 +1,3 @@
-# cpu_config_gui_ubuntu
-gui for create / load cpu's profil 
-
 # dependences
 packet [cpufrequtils](https://doc.ubuntu-fr.org/cpu-frequtils)
 # Install
@@ -11,9 +8,7 @@ sudo apt install ./.deb
 ```
 sudo apt purge cpucfg
 ```
-# how use it
-edit main.cpp to add config and make it
-# start
+# Start
 not installed
 ```
 sudo ./cpucfg
@@ -22,3 +17,12 @@ if installed
 ```
 cpucfg
 ```
+# When it run
+```
+:: cpucfg :: start
+a name [     mini] gouv [  powersave] freq [0.5] Ghz
+z name [    mini+] gouv [performance] freq [1.0] Ghz
+e name [      med] gouv [performance] freq [1.5] Ghz
+r name [     hard] gouv [performance] freq [2.5] Ghz
+```
+tape a,z,e or r and it set profile
